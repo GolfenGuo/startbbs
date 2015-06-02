@@ -1,5 +1,5 @@
 FROM centos:latest
-RUN  yum -y install  php ImageMagick
+RUN  yum -y install php ImageMagick && yum -y reinstall httpd
 RUN mkdir -p /var/www/html
 WORKDIR /var/www/html
 COPY . /var/www/html
