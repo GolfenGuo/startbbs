@@ -1,7 +1,7 @@
 FROM ubuntu:trusty
 
 MAINTAINER Geekwolf
-RUN  apt-get -y update && apt-get  -y install mysql php5 ImageMagick  apache2
+RUN  apt-get -y update && apt-get  -y install mysql-client php5 ImageMagick  apache2
 RUN mkdir -p /var/www/html
 WORKDIR /var/www/html
 COPY . /var/www/html
